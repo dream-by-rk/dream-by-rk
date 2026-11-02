@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DREAM BY RK — Meble na wymiar w Polsce</title>
+  <style>
+    /* Основные стили */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #161b22;
+      border-bottom: 2px solid #00d2ff;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00d2ff;
+      text-shadow: 0 0 10px #00d2ff;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00d2ff;
+    }
+    /* Главный баннер */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+    }
+    .hero h1 {
+      font-size: 48px;
+      color: #00d2ff;
+      text-shadow: 0 0 15px rgba(0, 210, 255, 0.6);
+      margin-bottom: 10px;
+    }
+    .hero h2 {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #8b949e;
+      font-size: 18px;
+    }
+    .btn {
+      background-color: #00d2ff;
+      color: #0d1117;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #33d9ff;
+      transform: translateY(-2px);
+    }
+    /* Секция услуг */
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #ffffff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 25px;
+      text-align: center;
+      transition: border-color 0.3s;
+    }
+    .card:hover {
+      border-color: #00d2ff;
+    }
+    .card h3 {
+      color: #00d2ff;
+      margin-bottom: 15px;
+    }
+    .card p {
+      color: #8b949e;
+      font-size: 15px;
+    }
+    /* Контакты */
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #fff;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      outline: none;
+      border-color: #00d2ff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header>
+    <div class="logo">DREAM BY RK</div>
+    <nav>
+      <a href="#oferta">Oferta</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- Баннер -->
+  <section class="hero">
+    <h1>DREAM BY RK</h1>
+    <h2>Meble na wymiar — Twój styl, Twoje zasady!</h2>
+    <p>Projektujemy i wykonujemy wysokiej jakości meble korpusowe oraz zabudowy na wymiar w całej Polsce. Kuchnie, szafy, komody, szafki nocne, półki i przedpokoje.</p>
+    <button class="btn" onclick="document.getElementById('kontakt').scrollIntoView();">Darmowa wycena i pomiar</button>
+  </section>
+<!-- Услуги -->
+  <section id="oferta" class="section">
+    <h2 class="section-title">Nasza Oferta</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Kuchnie na wymiar</h3>
+        <p>Nowoczesne i funkcjonalne zabudowy kuchenne dopasowane do Twojego wnętrza.</p>
+      </div>
+      <div class="card">
+        <h3>Szafy i Garderoby</h3>
+        <p>Pojemne szafy przesuwne, wnękowe oraz kompleksowe wyposażenie garderób.</p>
+      </div>
+      <div class="card">
+        <h3>Komody i Szafki RTV</h3>
+        <p>Stylowe komody, meble salonowe oraz szafki nocne wykonane z dbałością o detale.</p>
+      </div>
+      <div class="card">
+        <h3>Przedpokoje i Półki</h3>
+        <p>Praktyczne meble do przedpokoju, regały oraz półki na indywidualne zamówienie.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма контактов -->
+  <section id="kontakt" class="section">
+    <h2 class="section-title">Skontaktuj się z nami</h2>
+    <form class="contact-form" onsubmit="alert('Dziękujemy za wiadomość! Skontaktujemy się z Tobą.'); return false;">
+      <input type="text" placeholder="Twoje imię" required>
+      <input type="tel" placeholder="Numer telefonu" required>
+      <textarea rows="4" placeholder="Opisz, jakich mebli potrzebujesz (np. wymiary, rodzaj)..." required></textarea>
+      <button type="submit" class="btn">Wyślij zapytanie</button>
+    </form>
+  </section>
+
+  <!-- Подвал -->
+  <footer>
+    <p>&copy; DREAM BY RK — Meble na wymiar w Polsce. Wszystkie prawa zastrzeżone.</p>
+  </footer>
+
+</body>
+</html>
