@@ -1,47 +1,62 @@
-<button class="btn" onclick="document.getElementById('kontakt').scrollIntoView();">Darmowa wycena i pomiar</button>
+<header>
+    <div class="logo-container">
+      <!-- Если захотите добавить картинку логотипа, загрузите её в репозиторий и укажите имя в src, например src="logo.png" -->
+      <!-- <img src="logo.png" alt="Logo" class="logo-img"> -->
+      <div class="logo">DREAM BY RK</div>
+    </div>
+    <nav>
+      <a href="#oferta">Realizacje</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>DREAM BY RK</h1>
+    <h2>Meble na wymiar — Twój styl, Twoje zasady!</h2>
+    <p>Projektujemy i wykonujemy wysokiej jakości meble korpusowe oraz zabudowy na wymiar w całej Polsce. Kuchnie, szafy, komody i szafki.</p>
+    <button class="btn" onclick="document.getElementById('kontakt').scrollIntoView();">Darmowa wycena i pomiar</button>
   </section>
 
   <section id="oferta" class="section">
-    <h2 class="section-title">Nasza Oferta i Realizacje</h2>
-    <div class="grid">
+    <h2 class="section-title">Nasze Realizacje</h2>
 
-      <div class="card">
-        <img src="kuchnia.jpg" alt="Kuchnie na wymiar">
-        <h3>Kuchnie na wymiar</h3>
-        <p>Nowoczesne i funkcjonalne zabudowy kuchenne dopasowane do Twojego wnętrza.</p>
+    <!-- Категория: Кухни -->
+    <div class="category-block">
+      <h3 class="category-title">Kuchnie na wymiar</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="kuchnia.jpg" alt="Kuchnia 1">
+          <p style="color: #8b949e;">Nowoczesna zabudowa kuchenna</p>
+        </div>
+        <div class="card">
+          <img src="kuchnia2.jpg" alt="Kuchnia 2">
+          <p style="color: #8b949e;">Funkcjonalne AGD i wyspa</p>
+        </div>
       </div>
-
-      <div class="card">
-        <img src="kuchnia2.jpg" alt="Zabudowa kuchenna">
-        <h3>Zabudowy kuchenne</h3>
-        <p>Indywidualne projekty uwzględniające każdy centymetr Twojej przestrzeni.</p>
-      </div>
-
-      <div class="card">
-        <img src="kuchnia3.jpg" alt="Meble nowoczesne">
-        <h3>Nowoczesny design</h3>
-        <p>Najwyższej jakości materiały, niezawodne okucia i elegancki wygląd.</p>
-      </div>
-
-      <div class="card">
-        <img src="kuchnia4.jpg" alt="Szafy i garderoby">
-        <h3>Szafy i Garderoby</h3>
-        <p>Pojemne systemy przechowywania dla idealnego porządku w domu.</p>
-      </div>
-
-      <div class="card">
-        <img src="kuchnia5.jpg" alt="Komody i szafki">
-        <h3>Komody i Szafki</h3>
-        <p>Stylowe meble uzupełniające salon, sypialnię i przedpokój.</p>
-      </div>
-
-      <div class="card">
-        <img src="kuchnia6.jpg" alt="Detale i wykończenie">
-        <h3>Precyzja wykonania</h3>
-        <p>Dbałość o każdy detal na każdym etapie realizacji zamówienia.</p>
-      </div>
-
     </div>
+
+    <!-- Категория: Шкафы и гардеробные -->
+    <div class="category-block">
+      <h3 class="category-title">Szafy i Garderoby</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="kuchnia4.jpg" alt="Szafa">
+          <p style="color: #8b949e;">Pojemna szafa wnękowa</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Категория: Другая мебель -->
+    <div class="category-block">
+      <h3 class="category-title">Komody i Inne Meble</h3>
+      <div class="grid">
+        <div class="card">
+          <img src="kuchnia5.jpg" alt="Komoda">
+          <p style="color: #8b949e;">Stylowa komoda</p>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <section id="kontakt" class="section">
