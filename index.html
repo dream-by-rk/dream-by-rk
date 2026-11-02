@@ -1,59 +1,234 @@
-<header>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DREAM BY RK — Meble na wymiar w Polsce</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background-color: #161b22;
+      border-bottom: 2px solid #00d2ff;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00d2ff;
+      text-shadow: 0 0 10px #00d2ff;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00d2ff;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #161b22 0%, #0d1117 100%);
+    }
+    .hero h1 {
+      font-size: 48px;
+      color: #00d2ff;
+      text-shadow: 0 0 15px rgba(0, 210, 255, 0.6);
+      margin-bottom: 10px;
+    }
+    .hero h2 {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      color: #8b949e;
+      font-size: 18px;
+    }
+    .btn {
+      background-color: #00d2ff;
+      color: #0d1117;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #33d9ff;
+      transform: translateY(-2px);
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #ffffff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 10px;
+    }
+    .category-block {
+      margin-bottom: 50px;
+    }
+    .category-title {
+      font-size: 24px;
+      color: #00d2ff;
+      margin-bottom: 20px;
+      border-left: 4px solid #00d2ff;
+      padding-left: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      transition: border-color 0.3s;
+    }
+    .card:hover {
+      border-color: #00d2ff;
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      color: #fff;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      outline: none;
+      border-color: #00d2ff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
     <div class="logo-container">
-      <!-- Если захотите добавить картинку логотипа, загрузите её в репозиторий и укажите имя в src, например src="logo.png" -->
-      <!-- <img src="logo.png" alt="Logo" class="logo-img"> -->
-      <div class="logo">DREAM BY RK</div>
+      <div class="logo-text">DREAM BY RK</div>
     </div>
     <nav>
       <a href="#oferta">Realizacje</a>
       <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
-
   <section class="hero">
     <h1>DREAM BY RK</h1>
     <h2>Meble na wymiar — Twój styl, Twoje zasady!</h2>
-    <p>Projektujemy i wykonujemy wysokiej jakości meble korpusowe oraz zabudowy na wymiar w całej Polsce. Kuchnie, szafy, komody i szafki.</p>
+    <p>Projektujemy i wykonujemy wysokiej jakości meble korpusowe oraz zabudowy na wymiar w całej Polsce. Kuchnie, szafy, garderoby, komody, stoły i półki.</p>
     <button class="btn" onclick="document.getElementById('kontakt').scrollIntoView();">Darmowa wycena i pomiar</button>
   </section>
 
   <section id="oferta" class="section">
     <h2 class="section-title">Nasze Realizacje</h2>
 
-    <!-- Категория: Кухни -->
+    <!-- Кухни -->
     <div class="category-block">
       <h3 class="category-title">Kuchnie na wymiar</h3>
       <div class="grid">
-        <div class="card">
-          <img src="kuchnia.jpg" alt="Kuchnia 1">
-          <p style="color: #8b949e;">Nowoczesna zabudowa kuchenna</p>
-        </div>
-        <div class="card">
-          <img src="kuchnia2.jpg" alt="Kuchnia 2">
-          <p style="color: #8b949e;">Funkcjonalne AGD i wyspa</p>
-        </div>
+        <div class="card"><img src="kuchnia.jpg" alt="Kuchnia"><p style="color: #8b949e;">Kuchnia nowoczesna</p></div>
+        <div class="card"><img src="kuchnia2.jpg" alt="Kuchnia"><p style="color: #8b949e;">Zabudowa kuchenna</p></div>
+        <div class="card"><img src="kuchnia3.jpg" alt="Kuchnia"><p style="color: #8b949e;">Projekt indywidualny</p></div>
+        <div class="card"><img src="kuchnia4.jpg" alt="Kuchnia"><p style="color: #8b949e;">Detal wykończenia</p></div>
+        <div class="card"><img src="kuchnia5.jpg" alt="Kuchnia"><p style="color: #8b949e;">Wyspa kuchenna</p></div>
+        <div class="card"><img src="kuchnia6.jpg" alt="Kuchnia"><p style="color: #8b949e;">Aranżacja wnętrza</p></div>
       </div>
     </div>
 
-    <!-- Категория: Шкафы и гардеробные -->
+    <!-- Гардеробы и шкафы -->
     <div class="category-block">
       <h3 class="category-title">Szafy i Garderoby</h3>
       <div class="grid">
-        <div class="card">
-          <img src="kuchnia4.jpg" alt="Szafa">
-          <p style="color: #8b949e;">Pojemna szafa wnękowa</p>
-        </div>
+        <div class="card"><img src="garderoba.jpg" alt="Garderoba"><p style="color: #8b949e;">Garderoba na wymiar</p></div>
+        <div class="card"><img src="garderoba2.jpg" alt="Garderoba"><p style="color: #8b949e;">System przechowywania</p></div>
+        <div class="card"><img src="szafa.jpg" alt="Szafa"><p style="color: #8b949e;">Szafa przesuwna</p></div>
+        <div class="card"><img src="szafa2.jpg" alt="Szafa"><p style="color: #8b949e;">Szafa wnękowa</p></div>
       </div>
     </div>
 
-    <!-- Категория: Другая мебель -->
+    <!-- Салон и гостиная -->
     <div class="category-block">
-      <h3 class="category-title">Komody i Inne Meble</h3>
+      <h3 class="category-title">Salon i Meble RTV</h3>
       <div class="grid">
-        <div class="card">
-          <img src="kuchnia5.jpg" alt="Komoda">
-          <p style="color: #8b949e;">Stylowa komoda</p>
-        </div>
+        <div class="card"><img src="salon.jpg" alt="Salon"><p style="color: #8b949e;">Zabudowa salonu</p></div>
+        <div class="card"><img src="salon1.jpg" alt="Salon"><p style="color: #8b949e;">Stylowy salon</p></div>
+        <div class="card"><img src="salon2.jpg" alt="Salon"><p style="color: #8b949e;">Nowoczesny design</p></div>
+      </div>
+    </div>
+
+    <!-- Столы и тумбы -->
+    <div class="category-block">
+      <h3 class="category-title">Stoły, Komody i Inne</h3>
+      <div class="grid">
+        <div class="card"><img src="komoda.jpg" alt="Komoda"><p style="color: #8b949e;">Komoda</p></div>
+        <div class="card"><img src="stol.jpg" alt="Stół"><p style="color: #8b949e;">Stół</p></div>
+        <div class="card"><img src="stol1.jpg" alt="Stół"><p style="color: #8b949e;">Stół roboczy</p></div>
+        <div class="card"><img src="stol2.jpg" alt="Stół"><p style="color: #8b949e;">Meble użytkowe</p></div>
+        <div class="card"><img src="tumba.jpg" alt="Tumba"><p style="color: #8b949e;">Tumba</p></div>
+        <div class="card"><img src="tumba2.jpg" alt="Tumba"><p style="color: #8b949e;">Szafka nocna / RTV</p></div>
+        <div class="card"><img src="polka.jpg" alt="Półka"><p style="color: #8b949e;">Półka ścienna</p></div>
+        <div class="card"><img src="polka1.jpg" alt="Półka"><p style="color: #8b949e;">Zabudowa półek</p></div>
+        <div class="card"><img src="polka2.jpg" alt="Półka"><p style="color: #8b949e;">Detale aranżacji</p></div>
       </div>
     </div>
 
@@ -62,7 +237,7 @@
   <section id="kontakt" class="section">
     <h2 class="section-title">Skontaktuj się z nami</h2>
     <div style="text-align: center; margin-bottom: 25px; color: #8b949e; font-size: 17px;">
-      <p style="margin-bottom: 8px;">📞 Telefon: <strong style="color: #00d2ff;">+48 692 896 431</strong></p>
+        <p style="margin-bottom: 8px;">📞 Telefon: <strong style="color: #00d2ff;">+48 692 896 431</strong></p>
       <p style="margin-bottom: 8px;">📧 Email: <strong style="color: #00d2ff;">siemichevakateryna@gmail.com</strong></p>
       <p>📍 Lokalizacja: <strong style="color: #00d2ff;">Polska (Cały kraj)</strong></p>
     </div>
